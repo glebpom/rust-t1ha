@@ -50,7 +50,8 @@ fn t1ha0_ia32aes_avx(_data: &[u8], _seed: u64) -> u64 {
 
 const KB: usize = 1024;
 const SEED: u64 = 0x0123456789ABCDEF;
-const PARAMS: [usize; 7] = [7, 8, 32, 256, KB, 4 * KB, 16 * KB];
+//const PARAMS: [usize; 7] = [7, 8, 32, 256, KB, 4 * KB, 16 * KB];
+const PARAMS: [usize; 1] = [16];
 
 lazy_static! {
     static ref DATA: Vec<u8> = (0..16 * KB).map(|b| b as u8).collect::<Vec<_>>();
